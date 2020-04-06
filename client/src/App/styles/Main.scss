@@ -1,0 +1,75 @@
+.Main {
+  height: calc(100vh - 65px - 50px);
+  background-color: #C2CAD0;
+  /* text-align: center; */
+
+  .center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  #links {
+    padding-top: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #workText {
+    cursor: pointer;
+    font-family: 'Acme', sans-serif;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    font-size: 10rem;
+    text-shadow: 6px 6px grey;
+    line-height: 1;
+    transition: all ease-in 0.3s;
+  }
+
+  #workText:hover {
+    text-shadow: 3px 3px 10px black;
+    left: 3px;
+    top: 3px;
+    color: whitesmoke;
+  }
+
+  #aboutText {
+    z-index: 3;
+    cursor: pointer;
+    font-family: 'Acme', sans-serif;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    font-size: 10rem;
+    text-shadow: 6px 6px grey;
+    line-height: 1;
+    transition: all ease-in 0.3s;
+  }
+
+  // #aboutText:hover {
+  //   text-shadow: 3px 3px 10px black;
+  //   left: 3px;
+  //   top: 3px;
+  //   color: whitesmoke;
+  // }
+
+  #links{
+    a {
+      color: black;
+      text-decoration: none;
+    }
+    a:visited {
+      color: black;
+    }
+    a:hover {
+      text-shadow: 3px 3px 10px black;
+      left: 3px;
+      top: 3px;
+      color: whitesmoke;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  height: 65px;
+  background-color: #C2B9B0;
+  line-height: 65px;
+  font-size: 1.3rem;
+
+  .navLinks {
+    height: inherit;
+
+    a {
+      color: brown;
+      font-weight: bold;
+      // font-size: 1.3rem;
+      letter-spacing: 1px;
+      margin: 0 1em 0 1em;
+      text-decoration: none;
+      transition: color 0.5s ease;
+    }
+
+    a:hover {
+      color: rgb(109, 28, 28);
+    }
+  }
+
+
+
+  #brand {
+    margin-right: 1em;
+    // font-size: 1.3rem;
+  }
+
+  @media screen and (max-width: 600px) {
+    font-size: 1rem;
+  }
+
+}

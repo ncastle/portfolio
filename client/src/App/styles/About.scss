@@ -1,0 +1,90 @@
+.About {
+  height: calc(100vh - 65px - 65px);
+  background-color: #C2CAD0;
+  display: flex;
+  overflow: hidden;
+  z-index: 2;
+
+  /* text-align: center; */
+
+  .aboutDesc {
+    z-index: 4;
+    flex-basis: 45%;
+    text-align: center;
+    font-size: 2.4rem;
+    color: whitesmoke;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    p {
+      position: relative;
+      padding: 10px;
+      left: 100%;
+      animation: slide-in1 1s ease-in-out forwards;
+      text-shadow: 0px 3px 2px rgb(115, 120, 124);
+    }
+  }
+
+  @keyframes slide-in1 {
+    100% {
+      left: 0%;
+    }
+  }
+
+  #aboutLeft {
+    z-index: 3;
+    position: relative;
+    background-color: whitesmoke;
+    flex-basis: 55%;
+    height: calc(100vh - 65px - 65px);
+    box-shadow: -15px 0px 8px -5px inset #C2CAD0;
+
+  }
+
+  div#bg1 {
+    position: absolute;
+    z-index: 1;
+    background-color: rgb(224, 223, 223);
+    height: 450px;
+    width: 1500px;
+    transform: rotate(50deg);
+    box-shadow: 0 16px 12px -12px inset rgb(170, 170, 175);
+    left: -1400px;
+    top: 200px;
+    animation: bg-slide 1.5s ease-in-out forwards 1.1s;
+  }
+
+  @keyframes bg-slide {
+    100% {
+      left: -850px;
+    }
+  }
+
+  #aboutText {
+    z-index: 3;
+    cursor: pointer;
+    font-family: 'Acme', sans-serif;
+    position: absolute;
+    left: 40px;
+    top: 50px;
+    font-size: 10rem;
+    text-shadow: 6px 6px grey;
+    animation: rotateText ease 2s forwards;
+    line-height: 1;
+    transition: text-shadow ease-in 0.3s, left ease-in 0.3s, top ease-in 0.3s;
+  }
+
+  #aboutText:hover {
+    text-shadow: 3px 3px 10px black;
+    left: 43px;
+    top: 53px;
+  }
+
+  #headshot {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    border: 3px solid gray;
+    border-radius: 50%;
+  }
+}

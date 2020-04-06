@@ -1,0 +1,32 @@
+.Footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 65px;
+  background-color: #C2B9B0;
+  text-align: center;
+  line-height: 65px;
+  display: flex;
+  justify-content: flex-end;
+
+  ul {
+    display: flex;
+    list-style-type: none;
+    list-style-position: inside;
+    justify-content: space-between;
+    width: 33%;
+    padding-right: 1em;
+  }
+
+  li {
+    cursor: pointer;
+    background-color: grey;
+    width: 100%;
+    border: 1px solid red;
+  }
+
+  li:hover {
+    background-color: lightgray;
+  }
+
+}
