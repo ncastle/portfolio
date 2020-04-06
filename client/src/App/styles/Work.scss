@@ -159,12 +159,14 @@
     #workText {
       font-size: 8rem;
       left: 50%;
-      top: 25%;
-      animation: rotateBack ease 2s forwards;
+      transform: translateX(-50%);
+      top: -50%;
+      animation: slide-down ease 1s forwards;
     }
-
     .projects {
       flex-basis: 70%;
+      z-index: 0;
+      padding-bottom: 3rem;
     }
     .project-bg {
       flex-direction: column;
@@ -193,10 +195,4 @@
 
   }
 
-  @keyframes rotateBack {
-    100% {
-      transform: rotate(0deg);
-      transform: translate(-50%, -25%);
-    }
-  }
 }
