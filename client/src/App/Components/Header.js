@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import '../styles/Header.scss';
 
-function Header() {
+const Header = () => {
 
   return(
     <div className='Header'>
@@ -17,6 +17,6 @@ function Header() {
         </div>
     </div>
   )
-}
+};
 
 export default Header;
