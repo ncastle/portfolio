@@ -2,8 +2,8 @@
   {
     "name": "BCA Learning Management System",
     "githubLoc": "private",
-    "description": "",
-    "imgName": "",
+    "description": "An online platform for Burlington Code Academy bootcamp students and teachers, which delivers class material and grades to students, as well as tracks how a student is progressing throughout a course.",
+    "imgName": "LMSThumbnail",
     "pos": 0
   },
   {
@@ -30,15 +30,15 @@
   {
     "name": "Remock",
     "githubLoc": "https://github.com/BurlingtonCodeAcademy/remock-nick-ray",
-    "description": "A website built from a mockup",
+    "description": "A website built in plain HTML and CSS that was intended to match a given mockup",
     "imgName": "RemockThumbnail",
     "pos": 4
   },
   {
     "name": "Tic Tac Toe",
     "githubLoc": "https://github.com/BurlingtonCodeAcademy/tic-tac-toe-ncastle",
-    "description": "A classic Tic Tac Toe game",
-    "imgName": "TicTacTocThumbnail",
+    "description": "A classic Tic Tac Toe game that can be played with 2 real players, or 1 real player and a computer",
+    "imgName": "TicTacToeThumbnail",
     "pos": 5
   },
   {

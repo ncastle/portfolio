@@ -26,6 +26,12 @@
   .project {
     position: relative;
     left: 100%;
+
+
+    .description > *{
+      width: 90%;
+      margin: 2.5% auto;
+    }
   }
 
   @keyframes slide-in {

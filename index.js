@@ -13,14 +13,12 @@ app.use(express.static(path.join(__dirname, 'client/build')));
 app.get('/api/getList', (req, res) => {
     let list = ['item1', 'item2', 'item3'];
 	res.json(list);
-	console.log('sent list of items')
 });
 
 const projectData = require(path.join(__dirname, 'client/assets/projects.json'));
 
 app.get('/api/getProjects', (req, res) => {
     res.json(projectData);
-    console.log('sent project data');
 });
 
 // Handles requests that don't match the ones above
