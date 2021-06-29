@@ -16,6 +16,13 @@ app.get('/api/getList', (req, res) => {
 	console.log('sent list of items')
 });
 
+const projectData = require(path.join(__dirname, 'client/assets/projects.json'));
+
+app.get('/api/getProjects', (req, res) => {
+    res.json(projectData);
+    console.log('sent project data');
+});
+
 // Handles requests that don't match the ones above
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '/client/build/index.html'));

@@ -1,0 +1,58 @@
+[ 
+  {
+    "name": "BCA Learning Management System",
+    "githubLoc": "private",
+    "description": "",
+    "imgName": "",
+    "pos": 0
+  },
+  {
+    "name": "BasilDash",
+    "githubLoc": "https://github.com/ncastle/CeresGreens",
+    "description": "A dashbaord that displays sensor data from an indoor leafy green growing operation. This was the capstone project for the BCA bootcamp, completed with 3 other developers and presented to about 50-80 people.",
+    "imgName": "CeresGreensThumbnail",
+    "pos": 1
+  },
+  {
+    "name": "GeoVermonter",
+    "githubLoc": "https://github.com/ncastle/GeoVermonter",
+    "description": "A geographic guessing game made in React",
+    "imgName": "GeoVermonterThumbnail",
+    "pos": 2
+  },
+  {
+    "name": "Yelpington",
+    "githubLoc": "https://github.com/ncastle/yelpington",
+    "description": "A Yelp-like application for restaurants located in Burlignton, VT",
+    "imgName": "YelpingtonThumbnail",
+    "pos": 3
+  },
+  {
+    "name": "Remock",
+    "githubLoc": "https://github.com/BurlingtonCodeAcademy/remock-nick-ray",
+    "description": "A website built from a mockup",
+    "imgName": "RemockThumbnail",
+    "pos": 4
+  },
+  {
+    "name": "Tic Tac Toe",
+    "githubLoc": "https://github.com/BurlingtonCodeAcademy/tic-tac-toe-ncastle",
+    "description": "A classic Tic Tac Toe game",
+    "imgName": "TicTacTocThumbnail",
+    "pos": 5
+  },
+  {
+    "name": "Zorkington",
+    "githubLoc": "https://github.com/BurlingtonCodeAcademy/zorkington-connor-nick",
+    "description": "An implementation of a Zork-like game",
+    "imgName": "ZorkingtonThumbnail",
+    "pos": 6
+  },
+  {
+    "name": "Guess The Number",
+    "githubLoc": "https://github.com/BurlingtonCodeAcademy/guess-the-number-ncastle",
+    "description": "A command line guessing game played with the computer. This is the first project completed during the first week of the BCA development bootcamp.",
+    "imgName": "GuessTheNumberThumbnail",
+    "pos": 7
+  }
+]

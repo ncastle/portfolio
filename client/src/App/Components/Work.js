@@ -7,8 +7,27 @@ import RemockThumb from '../images/RemockThumbnail.png';
 import TicTacToeThumb from '../images/TicTacToeThumbnail.png';
 import GuessTheNumberThumb from '../images/GuessTheNumberThumbnail.png';
 import ZorkingtonThumb from '../images/ZorkingtonThumbnail.png';
-import SuperMario from '../images/super-mario-svg-free.png';
 import Rick from '../images/rick-450.png';
+
+
+const Project = (props) => {
+  console.log({props});
+
+  return (
+    <div className='project'>
+      <div className='project-bg'>
+        <a href={`${props.githubLoc}`}><img src={CeresThumb}
+            alt={`thumbnail for ${props.name} project`}/></a>
+        <div className='description'>
+          <h3>{props.name}</h3>
+          <p>
+            A dashboard that displays sensor data from an indoor leafy green growing op
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 const Work = () => {
 
@@ -19,12 +38,26 @@ const Work = () => {
     projArr.forEach((proj, i) => {
       proj.style.animation = `slide-in ease-in-out 1s forwards ${i / 5 + 0.3}s`;
     })
+  };
 
-  }
+  const fetchProjectInfo = async () => {
+    console.log('fetchProjectInfo');
+    const projectsResponse = await fetch('api/getProjects');
+    console.log({projectsResponse});
+    const projects = await projectsResponse.json();
+
+    console.log({projects});
+  };
 
   // slide in projects one time when component loads
   useEffect(() => {
-    projectSlideIn();
+    const loadProjects = async () => {
+      console.log('loadProjects');
+      await fetchProjectInfo();
+
+      projectSlideIn();
+    };
+    loadProjects();
   }, []);
 
   return (
@@ -34,7 +67,7 @@ const Work = () => {
           Work
         </div>
         <div id='bg1'></div>
-        <img id='rick' src={Rick}/>
+        <img id='rick' src={Rick} alt='Rick Sanchez character'/>
       </div>
       <div className="projects">
 
